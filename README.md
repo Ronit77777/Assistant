@@ -1,6 +1,7 @@
 Voice Assistant Project 🤖
 Features 🎯:
 Website Opener: Open any website with a voice command 📊
+<br>
 How it Works 🔍:
 User gives a voice command to open a website (e.g. "Open Google") 💬
 The voice assistant recognizes the command and extracts the website name 🤔
