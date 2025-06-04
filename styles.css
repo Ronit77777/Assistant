@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+    color: #e0f7fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+    color: #80deea;
+    text-shadow: 0 0 15px #80deea;
+}
+p {
+    max-width: 480px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #b2ebf2cc;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+#status {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 12px 0 4px;
+    color: #4dd0e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#pulse {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00bcd4;
+    box-shadow: 0 0 10px #00bcd4;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease;
+}
+#pulse.listening {
+    opacity: 1;
+    animation: pulse-animation 1.5s infinite;
+}
+@keyframes pulse-animation {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+        box-shadow: 0 0 10px #00bcd4;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.5;
+        box-shadow: 0 0 20px #00bcd4;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 1;
+        box-shadow: 0 0 10px #00bcd4;
+    }
+}
+#transcript {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #a7ffebcc;
+    min-height: 32px;
+    margin-bottom: 12px;
+    max-width: 480px;
+    user-select: text;
+}
+#output {
+    background: rgba(0,0,0,0.15);
+    border-radius: 14px;
+    box-shadow: inset 0 0 20px #0097a7aa;
+    max-width: 520px;
+    min-height: 80px;
+    color: #b2fef7;
+    font-size: 1.1rem;
+    padding: 20px 24px;
+    white-space: pre-wrap;
+    user-select: text;
+    margin-bottom: 30px;
+}
+#toggle-listen {
+    background: #00bcd4;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00363a;
+    cursor: pointer;
+    box-shadow: 0 0 30px #00bcd4aa;
+    transition: background-color 0.3s ease;
+}
+#toggle-listen.paused {
+    background: #e0f7fa;
+    color: #006064;
+    box-shadow: 0 0 25px #006064aa;
+}
+#toggle-listen:hover {
+    background: #0097a7;
+    color: #e0f7fa;
+}

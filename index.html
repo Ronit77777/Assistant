@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>REX</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>REX - Your Voice Assistant</h1>
+<p>REX listens to you continuously. Just talk naturally, ask questions or give commands. Say "stop listening" to pause me and "start listening" to resume.</p>
+
+<div id="status">
+    Status: <span id="listening-status">Idle</span>
+    <div id="pulse"></div>
+</div>
+
+<div id="transcript"></div>
+<div id="output"></div>
+<button id="toggle-listen" class="paused" aria-pressed="false" aria-label="Start listening">Start Listening</button>
+
+<script src="script.js"></script>
+</body>
+</html>
