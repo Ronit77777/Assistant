@@ -1,12 +1,12 @@
-<u>Voice Assistant Project 🤖</u>
+<b><u>Voice Assistant Project 🤖</u><b>
 
-Features 🎯:
+<u>Features 🎯:<u>
 
 
 <u>Website Opener</u>: Open any website with a voice command 📊
 
 
-How it Works 🔍:
+<u>How it Works 🔍:</u>
 
 
 User gives a voice command to open a website (e.g. "Open Google") 💬
@@ -18,7 +18,7 @@ The voice assistant recognizes the command and extracts the website name 🤔
 The assistant opens the website in the default web browser 🌐
 
 
-Requirements 📝:
+<u>Requirements 📝:</u>
 
 
 <u>Python 3.x 🐍</u>
@@ -30,10 +30,10 @@ Requirements 📝:
 <u>Webbrowser library</u> (e.g. webbrowser) 🌐
 
 
-Installation 📥:
+<u>Installation 📥:</u>
 
 
-Clone this repository: <u>git clone https://github.com/your-username/voice-assistant.git</u> 💻
+Clone this repository: <u>git clone [https://github.com/your-username/voice-assistant.git](https://github.com/Ronit77777/Assistant.git)</u> 💻
 
 
 Install required libraries: <u>pip install SpeechRecognition webbrowser</u> 💸
